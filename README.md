@@ -1,4 +1,4 @@
-# iris_satellite_plantation
+# iris_satellite_plantation - under construction
 Unsupervised detection of plantations remotely in satellite images.
 
 ## First why detect plantations?
@@ -21,9 +21,6 @@ area square (around 1km²).
 
 ![picture](https://github.com/renatobanzai/iris_satellite_plantation/blob/main/docs/img/img_tci.png?raw=true)
 
-### Image Processing
-
-
 ### Clusterization By Vegetation Index
 ![picture](https://github.com/renatobanzai/iris_satellite_plantation/blob/main/docs/img/result.png?raw=true)
 After all the image processing we can calculate the vegetation index NDVI (Normalized difference vegetation index) to 
@@ -36,6 +33,18 @@ Putting this solution into a continuous data pipeline can help to remote monitor
 In fact the new Iris feature to use Python Embedded make this kind of solution to be quickly created into
 the IRIS environment.
 
+## Installing
+First clone my repo in a directory of your machine:
+
+'''
+$ git clone https://github.com/renatobanzai/iris_satellite_plantation.git
+'''
+After this, go to the directory iris_satellite_plantation
+'''
+cd iris_satellite_plantation/app
+docker build ./
+'''
+
 
 ## If you enjoyed this application please vote in iris_satellite_plantation!
-[https://openexchange.intersystems.com/contest/current](https://openexchange.intersystems.com/contest/current)
+[https://openexchange.intersystems.com/package/iris_satellite_plantation](https://openexchange.intersystems.com/package/iris_satellite_plantation)
