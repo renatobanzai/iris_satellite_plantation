@@ -1,0 +1,43 @@
+docker run --name irispython -d --publish 1972:1972 --publish 52773:52773 arti.iscinternal.com/intersystems/iris:2021.1.0PYTHON.297.0
+
+
+docker exec -it -u 0 irispython bash
+
+
+export PATH=/usr/irissys/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/irisowner/bin
+export IRISUSERNAME=_SYSTEM
+export IRISPASSWORD=SYS
+
+ENV PATH=/usr/irissys/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/irisowner/bin
+ENV IRISUSERNAME=_SYSTEM
+ENV IRISPASSWORD=SYS
+
+
+
+
+docker exec -it -u 0 irispython iris session iris
+do ##class(%SYS.Python).Install("imap")
+do ##class(%SYS.Python).Install("imap")
+
+apt-get update
+apt-get install ffmpeg libsm6 libxext6  -y
+
+
+
+docker image tag arti.iscinternal.com/intersystems/iris:2021.1.0PYTHON.297.0 iris.python.embbeded:latest
+
+docker push iris.python.embbeded:latest
+
+import iris
+import pandas as pd
+rs = iris.sql.exec("select Name, Super, TimeCreated from %Dictionary.ClassDefinition WHERE Name %STARTSWITH %Net.")
+mydataframe = rs.dataframe()
+
+
+"CREATE TABLE Persons ( PersonID int, LastName varchar(255) )"
+
+
+
+docker run --name irispython2 -d --publish 1372:1972 --publish 51773:52773 irpy:latest
+
+subprocess.check_call([sys.executable, '-m', 'pip', 'install','opencv-python'])
