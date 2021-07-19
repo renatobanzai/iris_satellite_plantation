@@ -1,2 +1,7 @@
-opencv-python==4.5.2.52
-numpy==1.20.3
+opencv-python
+numpy
+pyproj
+rasterio
+fiona
+boto3
+matplotlib

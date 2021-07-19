@@ -4,6 +4,8 @@ USER root
 RUN apt-get update
 RUN apt-get install ffmpeg libsm6 libxext6 -y
 USER irisowner
+COPY ./ /app
+RUN /usr/irissys/bin/irispip install -r /app/requirements.txt
 ENV PATH=/usr/irissys/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/irisowner/bin
 ENV IRISUSERNAME=_SYSTEM
 ENV IRISPASSWORD=SYS
