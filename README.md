@@ -37,13 +37,19 @@ the IRIS environment.
 First clone my repo in a directory of your machine:
 
 ```
-$ git clone https://github.com/renatobanzai/iris_satellite_plantation.git
+# git clone https://github.com/renatobanzai/iris_satellite_plantation.git
 ```
 After this, go to the directory iris_satellite_plantation
 ```
-cd iris_satellite_plantation/app
-docker build ./
+# cd iris_satellite_plantation/app
+# docker build -t iris_satellite_plantation:latest ./
 ```
+Sometimes the command above takes longer than the reality. Just do a ctrl + c and repeat this step.
+```
+# docker run --name iris_plantation -d --publish 1972:1972 --publish 52773:52773 iris_satellite_plantation:latest
+# docker exec -it iris_plantation /usr/irissys/bin/irispython /app/process.py
+```
+Now you are oficially running the newest EAP, connecting into AWS to download a satellite image and much more soon ;) 
 
 ## If you enjoyed this application please vote in iris_satellite_plantation!
 [https://openexchange.intersystems.com/package/iris_satellite_plantation](https://openexchange.intersystems.com/package/iris_satellite_plantation)
