@@ -1,0 +1,9 @@
+FROM renatobanzai/iris-python-embbeded:latest
+MAINTAINER "renatobanzai@gmail.com"
+USER root
+RUN apt-get update
+RUN apt-get install ffmpeg libsm6 libxext6 -y
+USER irisowner
+ENV PATH=/usr/irissys/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/irisowner/bin
+ENV IRISUSERNAME=_SYSTEM
+ENV IRISPASSWORD=SYS
