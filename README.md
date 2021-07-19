@@ -49,7 +49,7 @@ Sometimes the command above takes longer than the reality. Just do a ctrl + c an
 # docker run --name iris_plantation -d --publish 1972:1972 --publish 52773:52773 iris_satellite_plantation:latest
 # docker exec -it iris_plantation /usr/irissys/bin/irispython /app/process.py
 ```
-Now you are oficially running the newest EAP, connecting into AWS to download a satellite image and much more soon ;) 
+Now you are officially running the newest EAP, connecting into AWS to download a satellite image and much more soon ;) 
 
 ## If you enjoyed this application please vote in iris_satellite_plantation!
 [https://openexchange.intersystems.com/package/iris_satellite_plantation](https://openexchange.intersystems.com/package/iris_satellite_plantation)
