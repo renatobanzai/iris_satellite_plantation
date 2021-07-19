@@ -36,15 +36,14 @@ the IRIS environment.
 ## Installing
 First clone my repo in a directory of your machine:
 
-'''
+```
 $ git clone https://github.com/renatobanzai/iris_satellite_plantation.git
-'''
+```
 After this, go to the directory iris_satellite_plantation
-'''
+```
 cd iris_satellite_plantation/app
 docker build ./
-'''
-
+```
 
 ## If you enjoyed this application please vote in iris_satellite_plantation!
 [https://openexchange.intersystems.com/package/iris_satellite_plantation](https://openexchange.intersystems.com/package/iris_satellite_plantation)
